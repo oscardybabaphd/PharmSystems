@@ -1,0 +1,12 @@
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\Phram.Context.dll.config
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\Phram.Context.dll
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\Phram.Context.pdb
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\EntityFramework.dll
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\EntityFramework.SqlServer.dll
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\Pharm.Core.dll
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\EntityFramework.xml
+C:\Appzone\PharmSystems\Phram.Context\bin\Release\EntityFramework.SqlServer.xml
+C:\Appzone\PharmSystems\Phram.Context\obj\Release\Phram.Context.csprojResolveAssemblyReference.cache
+C:\Appzone\PharmSystems\Phram.Context\obj\Release\Phram.Context.dll
+C:\Appzone\PharmSystems\Phram.Context\obj\Release\Phram.Context.pdb

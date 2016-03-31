@@ -1,0 +1,21 @@
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.dll.config
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.dll
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.pdb
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.dll
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.xml
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.dll
+C:\Users\HP\Documents\Visual Studio 2013\Projects\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.dll.config
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.xml
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.dll
+C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.csprojResolveAssemblyReference.cache

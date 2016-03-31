@@ -1,0 +1,11 @@
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\Pharm.Core.dll.config
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\Pharm.Core.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\EntityFramework.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\EntityFramework.SqlServer.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\Newtonsoft.Json.dll
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\EntityFramework.xml
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\EntityFramework.SqlServer.xml
+C:\Appzone\PharmSystems\Pharm.Core\bin\Release\Newtonsoft.Json.xml
+C:\Appzone\PharmSystems\Pharm.Core\obj\Release\Pharm.Core.dll
+C:\Appzone\PharmSystems\Pharm.Core\obj\Release\Pharm.Core.pdb

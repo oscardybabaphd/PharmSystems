@@ -1,0 +1,16 @@
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Pharm.Repository.dll.config
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Pharm.Repository.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Pharm.Repository.pdb
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\EntityFramework.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\EntityFramework.SqlServer.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Newtonsoft.Json.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Pharm.Core.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Phram.Context.dll
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Pharm.Core.pdb
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Phram.Context.pdb
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\EntityFramework.xml
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\EntityFramework.SqlServer.xml
+C:\Appzone\PharmSystems\Pharm.Repository\bin\Release\Newtonsoft.Json.xml
+C:\Appzone\PharmSystems\Pharm.Repository\obj\Release\Pharm.Repository.csprojResolveAssemblyReference.cache
+C:\Appzone\PharmSystems\Pharm.Repository\obj\Release\Pharm.Repository.dll
+C:\Appzone\PharmSystems\Pharm.Repository\obj\Release\Pharm.Repository.pdb
