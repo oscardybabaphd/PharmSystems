@@ -49,15 +49,15 @@ namespace PharmSystems.Controllers
         /// <param name="name"></param>
         /// <returns></returns>
         [AcceptVerbs("GET")]
-        public IHttpActionResult GetLGAByCode(string code = "",bool lazy = false)
+        public IHttpActionResult GetLGAByStateID(int Id = 0,bool lazy = false)
         {
             this.Lazy(lazy);
             ErrorHandler message = new ErrorHandler("GetLGAByCode");
             try
             {
-                if (!string.IsNullOrEmpty(code))
+                if (Id > 0)
                 {
-                    var _result = _Lga.FindWithClause(x=>x.Code == code);
+                    var _result = _Lga.FindWithClauseList(x => x.StateID == Id);
                     if (_result != null)
                     {
                         return Json(_result);

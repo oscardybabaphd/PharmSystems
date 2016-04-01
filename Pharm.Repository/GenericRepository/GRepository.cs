@@ -48,5 +48,10 @@ namespace Pharm.Repository.GenericRepository
             _list = DbObject.ToList<T>().Skip(pageIndex * pageSize).Take(pageSize).ToList<T>();
             return _list;
         }
+        public IList<T> FindWithClauseList(Func<T, bool> predicate)
+        {
+            var _result = DbObject.Where(predicate).ToList<T>();
+            return _result;
+        }
     }
 }
