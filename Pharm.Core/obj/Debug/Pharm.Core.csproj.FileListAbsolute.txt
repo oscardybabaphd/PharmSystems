@@ -18,3 +18,4 @@ C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.dll
 C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.pdb
 C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Newtonsoft.Json.dll
 C:\Appzone\PharmSystems\Pharm.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Appzone\PharmSystems\Pharm.Core\obj\Debug\Pharm.Core.csprojResolveAssemblyReference.cache

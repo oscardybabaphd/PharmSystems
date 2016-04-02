@@ -149,5 +149,37 @@ namespace PharmSystems.Controllers
             }
         }
 
+        [AcceptVerbs("GET")]
+        public IHttpActionResult GetLGAById(int Id = 0, bool lazy = false)
+        {
+            ErrorHandler message = new ErrorHandler("GetLGAById");
+            this.Lazy(lazy);
+            try
+            {
+                if(Id > 0)
+                {
+                    var _result = _Lga.GetById(Id);
+                    if(_result != null)
+                    {
+                        return Json(_result);
+                    }
+                    else
+                    {
+                        var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.SuccessfulWithNoResult);
+                        return Json(_responseMessage);
+                    }
+                }
+                else
+                {
+                    var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.ParametersIncomplete);
+                    return Json(_responseMessage);
+                }
+            }
+            catch (Exception)
+            {
+                var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.ApplicationError);
+                return Json(_responseMessage);
+            }
+        }
     }
 }

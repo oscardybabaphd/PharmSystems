@@ -44,15 +44,15 @@ namespace PharmSystems.Controllers
         }
 
         [AcceptVerbs("GET")]
-        public IHttpActionResult GetStateByCode(string code = "", bool lazy = false)
+        public IHttpActionResult GetStateById(int Id = 0, bool lazy = false)
         {
             this.Lazy(lazy);
             ErrorHandler message = new ErrorHandler("GetByCode");
             try
             {
-                if (!string.IsNullOrEmpty(code))
+                if (Id > 0)
                 {
-                    var _result = _State.FindWithClause(x=>x.Code == code);
+                    var _result = _State.FindWithClause(x=>x.ID == Id);
                     if (_result != null)
                     {
                         return Json(_result);

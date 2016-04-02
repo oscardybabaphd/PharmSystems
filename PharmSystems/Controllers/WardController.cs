@@ -83,16 +83,16 @@ namespace PharmSystems.Controllers
         }
         [AcceptVerbs("GET")]
         // Api/Ward/GetWardByCode/?code=0110&lazy=true
-        public IHttpActionResult GetWardByCode(string code = "",bool lazy = false)
+        public IHttpActionResult GetWardByLGAId(int Id = 0,bool lazy = false)
         {
             this.Lazy(lazy);
             var message = new ErrorHandler("GetWardByCode");
             try
             {
-                Ward _getWardByCode = null;
-                if (!string.IsNullOrEmpty(code))
+                IList<Ward> _getWardByCode = null;
+                if (Id > 0)
                 {
-                    _getWardByCode = _Ward.FindWithClause(x => x.Code == code);//GetWardByCode(code);
+                    _getWardByCode = _Ward.FindWithClauseList(x => x.LGAID == Id);//GetWardByCode(code);
                     if (_getWardByCode != null)
                     {
                         return Json(_getWardByCode);

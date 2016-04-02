@@ -46,15 +46,15 @@ namespace PharmSystems.Controllers
         }
 
         [AcceptVerbs("GET")]
-        public IHttpActionResult GetHFByCode(string code = "",bool lazy = false)
+        public IHttpActionResult GetHFById(int Id = 0, bool lazy = false)
         {
             this.Lazy(lazy);
             ErrorHandler message = new ErrorHandler("GetHFByCode");
             try
             {
-                if (!string.IsNullOrEmpty(code))
+                if (Id > 0)
                 {
-                    var _result = _hf.FindWithClause(x=>x.Code == code);
+                    var _result = _hf.GetById(Id);
                     if (_result != null)
                     {
                         return Json(_result);
@@ -106,6 +106,55 @@ namespace PharmSystems.Controllers
                 else
                 {
                     var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.Failure);
+                    return Json(_responseMessage);
+                }
+            }
+            catch (Exception)
+            {
+                var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.ApplicationError);
+                return Json(_responseMessage);
+            }
+        }
+        [AcceptVerbs("GET")]
+        public IHttpActionResult GetHFByWardId(int Id = 0, bool lazy = false)
+        {
+            ErrorHandler message = new ErrorHandler("GetHFByWardId");
+            this.Lazy(lazy);
+            try
+            {
+                var _result = _hf.FindWithClauseList(x => x.WardID == Id);
+                if (_result.Count > 0)
+                {
+                    return Json(_result);
+                }
+                else
+                {
+                    var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.SuccessfulWithNoResult);
+                    return Json(_responseMessage);
+                }
+            }
+            catch (Exception)
+            {
+                var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.ApplicationError);
+                return Json(_responseMessage);
+            }
+        }
+
+        [AcceptVerbs("GET")]
+        public IHttpActionResult GetHFByPagination(int pageIndex = 0, int pageSize = 0, bool lazy = false)
+        {
+            ErrorHandler message = new ErrorHandler("GetHFByPagination");
+            this.Lazy(lazy);
+            try
+            {
+                var _result = _hf.GetByPagination(pageIndex, pageSize);
+                if(_result.Count > 0)
+                {
+                    return Json(_result);
+                }
+                else
+                {
+                    var _responseMessage = message.ResponseMessageHandler(Pharm.Repository.ErrorHandler.ResponseMessage.AppResponseCode.SuccessfulWithNoResult);
                     return Json(_responseMessage);
                 }
             }
