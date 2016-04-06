@@ -15,9 +15,11 @@ namespace PharmSystems.Controllers
     public class WardController : ApiController
     {
         protected WRepository _Ward = null;
+      
         public void Lazy(bool lazy)
         {
             _Ward = new WRepository(lazy);
+            
         }
         [AcceptVerbs("GET")]
         // Api/Ward/GetAllWard/
@@ -122,7 +124,7 @@ namespace PharmSystems.Controllers
         // Api/Ward/AddNewWard/ Post json params 
         public IHttpActionResult AddNewWard([FromBody]IList<Ward> ward)
         {
-            this.Lazy(false);
+           this.Lazy(false);
             var message = new ErrorHandler("AddNewWard");
             try
             {

@@ -31,7 +31,7 @@ namespace Pharm.Repository.GenericRepository
         }
         public T FindWithClause(Func<T, bool> predicate)
         {
-            var _result = DbObject.Where(predicate).FirstOrDefault();
+            var _result = DbObject.FirstOrDefault(predicate);
             return _result;
         }
         public void SaveChanges()

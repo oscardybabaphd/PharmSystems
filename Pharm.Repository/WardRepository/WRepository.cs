@@ -14,7 +14,7 @@ namespace Pharm.Repository.WardRepository
         {
 
         }
-
+       
         public IList<Ward> FilterByName(string name)
         {
             var result = GetAll().Where(x => x.Name == name).ToList();

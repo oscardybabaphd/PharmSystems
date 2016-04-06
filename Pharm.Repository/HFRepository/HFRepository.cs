@@ -15,9 +15,11 @@ namespace Pharm.Repository.HFRepository
         {
 
         }
+
+        
         public HealthFacility GetHFByCode(string code)
         {
-            var _result = GetAll().Where(x => x.Code == code).FirstOrDefault();
+            var _result = GetAll().FirstOrDefault(x => x.Code == code);
             return _result;
         }
     }
